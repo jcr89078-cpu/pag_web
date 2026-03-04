@@ -3,101 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio de Mecatrónica - ITS</title>
+    <title>Mecatrónica - Detalle de Laboratorio</title>
     <style>
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background-color: #c0392b; color: white; padding: 2rem; text-align: center; } /* Rojo para diferenciarlo */
-        nav { background: #2c3e50; padding: 10px; text-align: center; position: sticky; top: 0; }
+        header { background-color: #c0392b; color: white; padding: 2rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { background: #2c3e50; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        
         .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: #c0392b; text-decoration: none; font-weight: bold; }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 5px solid #c0392b; }
-        .card h3 { color: #c0392b; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        /* Estilo de las Secciones */
+        .section-title { background: #e74c3c; color: white; padding: 10px 20px; border-radius: 8px; margin-top: 30px; display: flex; align-items: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 20px; margin-top: 15px; }
         
-        .info-item { margin-bottom: 10px; }
-        .question { font-weight: bold; color: #2c3e50; display: block; }
-        .answer { color: #555; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #c0392b; }
+        .card h4 { margin-top: 0; color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 8px; }
         
-        .back-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #2c3e50; color: white; text-decoration: none; border-radius: 5px; }
+        .q-pair { margin-bottom: 15px; }
+        .question { font-weight: bold; color: #c0392b; display: block; font-size: 0.95rem; }
+        .answer { color: #555; display: block; margin-top: 3px; font-style: italic; }
+        
+        footer { text-align: center; padding: 30px; color: #777; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Laboratorio de Mecatrónica</h1>
-    <p>Instituto Tecnológico de Saltillo</p>
+    <p>Información Recopilada - Taller de Investigación</p>
 </header>
 
 <nav>
     <a href="index.html">Inicio</a>
-    <a href="#general">General</a>
-    <a href="#equipo">Equipo</a>
-    <a href="#reglamento">Reglamento</a>
+    <a href="electronica.html">Electrónica</a>
+    <a href="electrica.html">Eléctrica</a>
 </nav>
 
 <div class="container">
-    <a href="index.html" class="back-btn">← Volver al Inicio</a>
+    <a href="index.html" class="back-btn">← Volver a la Portada</a>
 
+    <div class="section-title">🏢 Identidad y Ubicación</div>
     <div class="grid">
-        <div class="card" id="general">
-            <h3>📍 Información General</h3>
-            <div class="info-item">
-                <span class="question">Nombre oficial:</span>
-                <span class="answer">Laboratorio de Mecatrónica [Completar]</span>
+        <div class="card">
+            <h4>Información General</h4>
+            <div class="q-pair">
+                <span class="question">¿Cuál es el nombre oficial?</span>
+                <span class="answer">[Escribe la respuesta aquí]</span>
             </div>
-            <div class="info-item">
-                <span class="question">Carreras:</span>
+            <div class="q-pair">
+                <span class="question">¿A qué carrera pertenece?</span>
                 <span class="answer">Ingeniería en Mecatrónica</span>
             </div>
-            <div class="info-item">
-                <span class="question">Ubicación:</span>
-                <span class="answer">Edificio [X], Salón [X]</span>
-            </div>
-            <div class="info-item">
-                <span class="question">Capacidad:</span>
-                <span class="answer">[X] estudiantes</span>
+            <div class="q-pair">
+                <span class="question">Ubicación (Edificio/Salón):</span>
+                <span class="answer">[Ej: Edificio A, Planta Alta]</span>
             </div>
         </div>
-
         <div class="card">
-            <h3>🎯 Misión y Visión</h3>
-            <p><strong>Misión:</strong> [Escribir aquí la misión recopilada]</p>
-            <p><strong>Visión:</strong> [Escribir aquí la visión recopilada]</p>
+            <h4>Misión y Visión</h4>
+            <div class="q-pair">
+                <span class="question">¿Cuál es la misión?</span>
+                <span class="answer">[Respuesta]</span>
+            </div>
+            <div class="q-pair">
+                <span class="question">¿Cuáles son los valores que promueve?</span>
+                <span class="answer">[Respuesta]</span>
+            </div>
         </div>
+    </div>
 
+    <div class="section-title">📚 Prácticas y Materias</div>
+    <div class="grid">
         <div class="card">
-            <h3>🕒 Horarios y Atención</h3>
-            <p><strong>Horario:</strong> Lunes a Viernes de [00:00] a [00:00]</p>
-            <p><strong>Encargado:</strong> [Nombre del encargado]</p>
-            <p><strong>Requisito de uso:</strong> [¿Se necesita reservación?]</p>
+            <h4>Uso Académico</h4>
+            <div class="q-pair">
+                <span class="question">¿Qué materias lo utilizan?</span>
+                <span class="answer">[Ej: Robótica, Microcontroladores]</span>
+            </div>
+            <div class="q-pair">
+                <span class="question">¿Qué tipo de prácticas se realizan?</span>
+                <span class="answer">[Respuesta]</span>
+            </div>
         </div>
-
-        <div class="card" id="equipo">
-            <h3>⚙️ Equipo e Infraestructura</h3>
-            <ul>
-                <li><strong>[Nombre equipo 1]:</strong> [Función corta]</li>
-                <li><strong>[Nombre equipo 2]:</strong> [Función corta]</li>
-                <li><strong>Software:</strong> [Mencionar SolidWorks, MATLAB, etc.]</li>
-            </ul>
-        </div>
-
-        <div class="card" id="reglamento">
-            <h3>⚠️ Reglamento y Seguridad</h3>
-            <p><strong>Requisitos:</strong> Uso obligatorio de bata y [otro calzado/credencial].</p>
-            <p><strong>Prohibiciones:</strong> [No comida, no equipo sin supervisión, etc.]</p>
-        </div>
-
         <div class="card">
-            <h3>📞 Contacto</h3>
-            <p>📧 [Correo electrónico]</p>
-            <p>📞 [Teléfono / Extensión]</p>
+            <h4>Proyectos</h4>
+            <div class="q-pair">
+                <span class="question">¿Se desarrollan proyectos finales?</span>
+                <span class="answer">[Respuesta]</span>
+            </div>
+            <div class="q-pair">
+                <span class="question">¿Hay prácticas interdisciplinarias?</span>
+                <span class="answer">[Respuesta]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">🛠️ Equipo y Operación</div>
+    <div class="grid">
+        <div class="card">
+            <h4>Infraestructura</h4>
+            <div class="q-pair">
+                <span class="question">¿Qué equipo principal tienen?</span>
+                <span class="answer">[Ej: Brazos robóticos, osciloscopios]</span>
+            </div>
+            <div class="q-pair">
+                <span class="question">¿Cuenta con software especializado?</span>
+                <span class="answer">[Respuesta]</span>
+            </div>
+        </div>
+        <div class="card">
+            <h4>Reglamento</h4>
+            <div class="q-pair">
+                <span class="question">¿Cuáles son las reglas principales?</span>
+                <span class="answer">[Respuesta]</span>
+            </div>
+            <div class="q-pair">
+                <span class="question">¿Requisitos de entrada?</span>
+                <span class="answer">[Ej: Bata, zapatos cerrados]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">📞 Contacto y Horarios</div>
+    <div class="grid">
+        <div class="card">
+            <h4>Atención</h4>
+            <div class="q-pair">
+                <span class="question">Horario de atención:</span>
+                <span class="answer">[Respuesta]</span>
+            </div>
+            <div class="q-pair">
+                <span class="question">Persona de contacto:</span>
+                <span class="answer">[Nombre]</span>
+            </div>
         </div>
     </div>
 </div>
 
 <footer>
-    <p>Proyecto Taller de Investigación | ITS | 2026</p>
+    <p>Tecnológico de Saltillo - Proyecto Escolar 2026</p>
 </footer>
 
 </body>
