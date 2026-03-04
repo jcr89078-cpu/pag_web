@@ -3,146 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mecatrónica - Detalle de Laboratorio</title>
+    <title>Mecatrónica - Detalle Completo</title>
     <style>
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background-color: #c0392b; color: white; padding: 2rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        header { background-color: #c0392b; color: white; padding: 2rem; text-align: center; }
         nav { background: #2c3e50; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
         
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
-        .back-btn { display: inline-block; margin-bottom: 20px; color: #c0392b; text-decoration: none; font-weight: bold; }
+        .container { max-width: 1100px; margin: 20px auto; padding: 20px; }
         
-        /* Estilo de las Secciones */
-        .section-title { background: #e74c3c; color: white; padding: 10px 20px; border-radius: 8px; margin-top: 30px; display: flex; align-items: center; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 20px; margin-top: 15px; }
+        /* Estilo de fotos */
+        .foto-lab {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            object-fit: cover; /* Esto hace que la foto no se deforme */
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title { background: #c0392b; color: white; padding: 12px; border-radius: 8px; margin-top: 40px; font-size: 1.4rem; }
         
-        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #c0392b; }
-        .card h4 { margin-top: 0; color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 15px; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-top: 4px solid #c0392b; }
+        .card h4 { margin-top: 0; color: #c0392b; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         
-        .q-pair { margin-bottom: 15px; }
-        .question { font-weight: bold; color: #c0392b; display: block; font-size: 0.95rem; }
-        .answer { color: #555; display: block; margin-top: 3px; font-style: italic; }
-        
-        footer { text-align: center; padding: 30px; color: #777; font-size: 0.9rem; }
+        .q-pair { margin-bottom: 12px; border-bottom: 1px dashed #eee; padding-bottom: 5px; }
+        .question { font-weight: bold; color: #2c3e50; font-size: 0.9rem; display: block; }
+        .answer { color: #666; font-size: 0.95rem; }
+
+        footer { text-align: center; padding: 40px; background: #2c3e50; color: white; margin-top: 50px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Laboratorio de Mecatrónica</h1>
-    <p>Información Recopilada - Taller de Investigación</p>
-</header>
-
 <nav>
-    <a href="index.html">Inicio</a>
-    <a href="electronica.html">Electrónica</a>
-    <a href="electrica.html">Eléctrica</a>
+    <a href="index.html">← Inicio</a>
+    <a href="#identidad">Identidad</a>
+    <a href="#academico">Académico</a>
+    <a href="#equipo">Infraestructura</a>
+    <a href="#reglas">Reglamento</a>
 </nav>
 
-<div class="container">
-    <a href="index.html" class="back-btn">← Volver a la Portada</a>
+<header>
+    <h1>Investigación: Laboratorio de Mecatrónica</h1>
+    <p>Instituto Tecnológico de Saltillo</p>
+</header>
 
-    <div class="section-title">🏢 Identidad y Ubicación</div>
+<div class="container">
+
+    <img src="https://via.placeholder.com/1100x400?text=Foto+Principal+del+Laboratorio" alt="Laboratorio Mecatrónica" class="foto-lab">
+    <div class="section-title" id="identidad">1. Identidad, Historia y Ubicación</div>
     <div class="grid">
         <div class="card">
             <h4>Información General</h4>
-            <div class="q-pair">
-                <span class="question">¿Cuál es el nombre oficial?</span>
-                <span class="answer">[Escribe la respuesta aquí]</span>
-            </div>
-            <div class="q-pair">
-                <span class="question">¿A qué carrera pertenece?</span>
-                <span class="answer">Ingeniería en Mecatrónica</span>
-            </div>
-            <div class="q-pair">
-                <span class="question">Ubicación (Edificio/Salón):</span>
-                <span class="answer">[Ej: Edificio A, Planta Alta]</span>
-            </div>
+            <div class="q-pair"><span class="question">Nombre oficial:</span><span class="answer">Laboratorio de Mecatrónica</span></div>
+            <div class="q-pair"><span class="question">Carreras:</span><span class="answer">Principalmente los estudiantes de mecatrónica son los que hacen uso del laboratorio.</span></div>
+            <div class="q-pair"><span class="question">Semestres:</span><span class="answer">A partir del 4to semestre de la carrera los alumnos realizan prácticas en el laboratorio.</span></div>
+            <div class="q-pair"><span class="question">Capacidad máxima:</span><span class="answer">Aproximadamente 30 personas por laboratorio.</span></div>
         </div>
         <div class="card">
-            <h4>Misión y Visión</h4>
-            <div class="q-pair">
-                <span class="question">¿Cuál es la misión?</span>
-                <span class="answer">[Respuesta]</span>
-            </div>
-            <div class="q-pair">
-                <span class="question">¿Cuáles son los valores que promueve?</span>
-                <span class="answer">[Respuesta]</span>
-            </div>
+            <h4>Historia y Ubicación</h4>
+            <div class="q-pair"><span class="question">Año de fundación:</span><span class="answer">2010</span></div>
+            <div class="q-pair"><span class="question">¿Por qué se creó?:</span><span class="answer">[Respuesta]</span></div>
+            <div class="q-pair"><span class="question">Ubicación:</span><span class="answer">Campus Boillot</span></div>
+            <div class="q-pair"><span class="question">Acceso discapacidad:</span><span class="answer">[Respuesta]</span></div>
         </div>
     </div>
 
-    <div class="section-title">📚 Prácticas y Materias</div>
+    <div class="section-title">2. Filosofía y Organización</div>
     <div class="grid">
         <div class="card">
-            <h4>Uso Académico</h4>
-            <div class="q-pair">
-                <span class="question">¿Qué materias lo utilizan?</span>
-                <span class="answer">[Ej: Robótica, Microcontroladores]</span>
-            </div>
-            <div class="q-pair">
-                <span class="question">¿Qué tipo de prácticas se realizan?</span>
-                <span class="answer">[Respuesta]</span>
-            </div>
+            <h4>Misión, Visión y Valores</h4>
+            <div class="q-pair"><span class="question">Misión:</span><span class="answer">Que los estudiantes tengan una buena preparación para el mundo laboral, de manera que dentro del laboratorio vean situaciones reales y actuales que se presentan en la industria.</span></div>
+            <div class="q-pair"><span class="question">Visión:</span><span class="answer">Convertirse en el espacio de aprendizaje integral, proporcionando herramientas que permitan al estudiante transformar ideas en soluciones reales para la sociedad.</span></div>
+            <div class="q-pair"><span class="question">Valores:</span><span class="answer">Respeto al docente y compañeros; Convivencia, Responsabilidad</span></div>
         </div>
         <div class="card">
-            <h4>Proyectos</h4>
-            <div class="q-pair">
-                <span class="question">¿Se desarrollan proyectos finales?</span>
-                <span class="answer">[Respuesta]</span>
-            </div>
-            <div class="q-pair">
-                <span class="question">¿Hay prácticas interdisciplinarias?</span>
-                <span class="answer">[Respuesta]</span>
-            </div>
+            <h4>Organigrama</h4>
+            <div class="q-pair"><span class="question">Jefe de departamento:</span><span class="answer">Dr. Felipe Machorro</span></div>
+            <div class="q-pair"><span class="question">Encargado directo:</span><span class="answer">[Respuesta]</span></div>
+            <div class="q-pair"><span class="question">Equipo de trabajo:</span><span class="answer">[Respuesta]</span></div>
         </div>
     </div>
 
-    <div class="section-title">🛠️ Equipo y Operación</div>
+    <img src="https://via.placeholder.com/1100x300?text=Foto+de+Equipos+o+Instalaciones" alt="Equipos" class="foto-lab">
+
+    <div class="section-title" id="academico">3. Prácticas y Materias</div>
     <div class="grid">
         <div class="card">
-            <h4>Infraestructura</h4>
-            <div class="q-pair">
-                <span class="question">¿Qué equipo principal tienen?</span>
-                <span class="answer">[Ej: Brazos robóticos, osciloscopios]</span>
-            </div>
-            <div class="q-pair">
-                <span class="question">¿Cuenta con software especializado?</span>
-                <span class="answer">[Respuesta]</span>
-            </div>
+            <h4>Materias y Proyectos</h4>
+            <div class="q-pair"><span class="question">Materias participantes:</span><span class="answer">Manufactura Avanzada, PLC, Automatización, Circuitos hidráulicos y neumáticos; y Tópicos de automatización.</span></div>
+            <div class="q-pair"><span class="question">Proyectos finales:</span><span class="answer">Programas en CNC.</span></div>
+            <div class="q-pair"><span class="question">¿Interdisciplinarias?:</span><span class="answer">Gestión y materiales son carreras ligadas a este laboratorio.</span></div>
         </div>
         <div class="card">
-            <h4>Reglamento</h4>
-            <div class="q-pair">
-                <span class="question">¿Cuáles son las reglas principales?</span>
-                <span class="answer">[Respuesta]</span>
-            </div>
-            <div class="q-pair">
-                <span class="question">¿Requisitos de entrada?</span>
-                <span class="answer">[Ej: Bata, zapatos cerrados]</span>
-            </div>
+            <h4>Dinámica de Prácticas</h4>
+            <div class="q-pair"><span class="question">Tipo de prácticas:</span><span class="answer">Prácticas manuales en donde se trabaja con torno o la fresadora o bien, prácticas orientadas a la automatización con CNC.</span></div>
+            <div class="q-pair"><span class="question">¿Son obligatorias?:</span><span class="answer">Después de las materias enfocadas en la teoría, pasan a las materias donde se aplican los conocimientos obtenidos
+                y se realizan las prácticas, por lo que es obligatorio realizarlas.</span></div>
         </div>
     </div>
 
-    <div class="section-title">📞 Contacto y Horarios</div>
+    <div class="section-title" id="equipo">4. Equipo, Software y Reglamento</div>
     <div class="grid">
         <div class="card">
-            <h4>Atención</h4>
-            <div class="q-pair">
-                <span class="question">Horario de atención:</span>
-                <span class="answer">[Respuesta]</span>
-            </div>
-            <div class="q-pair">
-                <span class="question">Persona de contacto:</span>
-                <span class="answer">[Nombre]</span>
-            </div>
+            <h4>Equipo e Infraestructura</h4>
+            <div class="q-pair"><span class="question">Equipos principales:</span><span class="answer">Celdas, CNC, Fresadora, Torno, Brazo automatizado, tableros de hidráulica, tableros de neumática.</span></div>
+            <div class="q-pair"><span class="question">Software especializado:</span><span class="answer">SolidWorks, AutoCAD</span></div>
+            <div class="q-pair"><span class="question">Mantenimiento:</span><span class="answer">Se les da mantenimiento preventivo, por lo regular todos los días se hace un chequeo para asegurar que todo esté en buenas condicones y funcional para las prácticas.</span></div>
+        </div>
+        <div class="card" id="reglas">
+            <h4>Reglamento y Seguridad</h4>
+            <div class="q-pair"><span class="question">Reglas principales:</span><span class="answer">-No introducir alimentos ni bebidas.
+                -Todo alumno que ingrese deberá estar asesorado por un catedrático.
+                -Mantener el área limpia
+            </span></div>
+            <div class="q-pair"><span class="question">Prohibiciones:</span><span class="answer">Bebidas, alimentos, correr, gritar, ingresar con ropa holgada</span></div>
+            <div class="q-pair"><span class="question">Requisitos:</span><span class="answer">Lentes de seguridad, bata de laboratorio, zapato cerrado.</span></div>
         </div>
     </div>
+
+    <div class="section-title">5. Horarios, Eventos y Contacto</div>
+    <div class="grid">
+        <div class="card">
+            <h4>Horarios y Atención</h4>
+            <div class="q-pair"><span class="question">Horario oficial:</span><span class="answer">7:00 am a 10:00 pm</span></div>
+            <div class="q-pair"><span class="question">¿Abre fines de semana?:</span><span class="answer">Sí, con autorización del jefe de departamento.</span></div>
+            <div class="q-pair"><span class="question">¿Requiere reservación?:</span><span class="answer">Sí, los docentes cada viernes reservan el laboratorio que necesiten y en el horarrio que necesiten.</span></div>
+        </div>
+        <div class="card">
+            <h4>Contacto y Eventos</h4>
+            <div class="q-pair"><span class="question">Correo y Teléfono:</span><span class="answer">[]</span></div>
+            <div class="q-pair"><span class="question">¿Certificaciones/Talleres?:</span><span class="answer">[]</span></div>
+            <div class="q-pair"><span class="question">Redes sociales:</span><span class="answer">[]</span></div>
+        </div>
+    </div>
+
 </div>
 
 <footer>
-    <p>Tecnológico de Saltillo - Proyecto Escolar 2026</p>
+    <p>© 2026 Taller de Investigación - ITS</p>
+    <p>Julieta Casillas Ruiz</p>
 </footer>
 
 </body>
