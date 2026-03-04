@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Proyecto Escolar</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #f0f0f0; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a mi Proyecto</h1>
+    <p>Esta es una página web sencilla hecha para la escuela.</p>
+</body>
+</html>
