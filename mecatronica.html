@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio de Mecatrónica - ITS</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background-color: #c0392b; color: white; padding: 2rem; text-align: center; } /* Rojo para diferenciarlo */
+        nav { background: #2c3e50; padding: 10px; text-align: center; position: sticky; top: 0; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 5px solid #c0392b; }
+        .card h3 { color: #c0392b; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        
+        .info-item { margin-bottom: 10px; }
+        .question { font-weight: bold; color: #2c3e50; display: block; }
+        .answer { color: #555; }
+        
+        .back-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #2c3e50; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Laboratorio de Mecatrónica</h1>
+    <p>Instituto Tecnológico de Saltillo</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="#general">General</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#reglamento">Reglamento</a>
+</nav>
+
+<div class="container">
+    <a href="index.html" class="back-btn">← Volver al Inicio</a>
+
+    <div class="grid">
+        <div class="card" id="general">
+            <h3>📍 Información General</h3>
+            <div class="info-item">
+                <span class="question">Nombre oficial:</span>
+                <span class="answer">Laboratorio de Mecatrónica [Completar]</span>
+            </div>
+            <div class="info-item">
+                <span class="question">Carreras:</span>
+                <span class="answer">Ingeniería en Mecatrónica</span>
+            </div>
+            <div class="info-item">
+                <span class="question">Ubicación:</span>
+                <span class="answer">Edificio [X], Salón [X]</span>
+            </div>
+            <div class="info-item">
+                <span class="question">Capacidad:</span>
+                <span class="answer">[X] estudiantes</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Misión y Visión</h3>
+            <p><strong>Misión:</strong> [Escribir aquí la misión recopilada]</p>
+            <p><strong>Visión:</strong> [Escribir aquí la visión recopilada]</p>
+        </div>
+
+        <div class="card">
+            <h3>🕒 Horarios y Atención</h3>
+            <p><strong>Horario:</strong> Lunes a Viernes de [00:00] a [00:00]</p>
+            <p><strong>Encargado:</strong> [Nombre del encargado]</p>
+            <p><strong>Requisito de uso:</strong> [¿Se necesita reservación?]</p>
+        </div>
+
+        <div class="card" id="equipo">
+            <h3>⚙️ Equipo e Infraestructura</h3>
+            <ul>
+                <li><strong>[Nombre equipo 1]:</strong> [Función corta]</li>
+                <li><strong>[Nombre equipo 2]:</strong> [Función corta]</li>
+                <li><strong>Software:</strong> [Mencionar SolidWorks, MATLAB, etc.]</li>
+            </ul>
+        </div>
+
+        <div class="card" id="reglamento">
+            <h3>⚠️ Reglamento y Seguridad</h3>
+            <p><strong>Requisitos:</strong> Uso obligatorio de bata y [otro calzado/credencial].</p>
+            <p><strong>Prohibiciones:</strong> [No comida, no equipo sin supervisión, etc.]</p>
+        </div>
+
+        <div class="card">
+            <h3>📞 Contacto</h3>
+            <p>📧 [Correo electrónico]</p>
+            <p>📞 [Teléfono / Extensión]</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Proyecto Taller de Investigación | ITS | 2026</p>
+</footer>
+
+</body>
+</html>
