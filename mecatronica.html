@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mecatrónica</title>
     <style>
+        /* Estilos base existentes */
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
         header { background-color: #c0392b; color: white; padding: 2rem; text-align: center; }
         nav { background: #2c3e50; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #c0392b; }
         
         .container { max-width: 1100px; margin: 20px auto; padding: 20px; }
         
-        .foto-wrapper { position: relative; width: 100%; height: 500px; margin: 20px 0; border-radius: 9px; overflow: hidden; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .foto-lab { width: 100%; height: 100%; object-fit: cover; }
-        .overlay-text { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(192, 57, 43, 0.9); color: white; padding: 20px; transform: translateY(100%); transition: 0.3s; box-sizing: border-box; }
-        .foto-wrapper:hover .overlay-text { transform: translateY(0); }
+        /* Botón de Retícula */
+        .pdf-link { display: block; width: fit-content; margin: 20px auto; background: #2c3e50; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .pdf-link:hover { background: #c0392b; transform: scale(1.05); }
 
+        /* Galería de Fotos Dinámica */
+        .maquinaria-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .foto-wrapper { position: relative; height: 300px; border-radius: 12px; overflow: hidden; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer; }
+        .foto-lab { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .overlay-text { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; background: rgba(192, 57, 43, 0.85); color: white; padding: 20px; display: flex; align-items: center; justify-content: center; text-align: center; transform: translateY(100%); transition: 0.4s ease-in-out; box-sizing: border-box; font-weight: bold; }
+        
+        .foto-wrapper:hover .overlay-text { transform: translateY(0); }
+        .foto-wrapper:hover .foto-lab { transform: scale(1.1); }
+
+        /* Estilos de secciones y tarjetas con movimiento */
         .section-title { background: #c0392b; color: white; padding: 12px; border-radius: 8px; margin-top: 40px; font-size: 1.4rem; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 15px; }
-        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-top: 4px solid #c0392b; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-top: 4px solid #c0392b; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        
         .card h4 { margin-top: 0; color: #c0392b; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         .q-pair { margin-bottom: 12px; border-bottom: 1px dashed #eee; padding-bottom: 5px; }
         .question { font-weight: bold; color: #2c3e50; font-size: 0.9rem; display: block; }
@@ -33,6 +46,7 @@
     <a href="index.html">← Inicio</a>
     <a href="#identidad">Identidad</a>
     <a href="#academico">Académico</a>
+    <a href="#maquinaria">Maquinaria</a>
     <a href="#equipo">Infraestructura</a>
     <a href="#reglas">Reglamento</a>
 </nav>
@@ -44,7 +58,9 @@
 
 <div class="container">
 
-    <div class="foto-wrapper">
+    <a href="reticula_mecatronica.pdf" target="_blank" class="pdf-link">📄 Ver Retícula de Mecatróncia (PDF)</a>
+
+    <div class="foto-wrapper" style="height: 500px;">
         <img src="img1.jpg" alt="Máquinas en el laboratorio." class="foto-lab">
         <div class="overlay-text">Máquinas en el laboratorio. Se encuentra la fresadora a la izquierda, CNC a la derecha.</div>
     </div>
@@ -64,6 +80,22 @@
         </div>
     </div>
 
+    <div class="section-title" id="maquinaria">Maquinaria del Laboratorio</div>
+    <div class="maquinaria-grid">
+        <div class="foto-wrapper">
+            <img src="img1.jpg" alt="Maquina 1" class="foto-lab">
+            <div class="overlay-text">Escribe aquí la función de la máquina 1.</div>
+        </div>
+        <div class="foto-wrapper">
+            <img src="img2.jpg" alt="Maquina 2" class="foto-lab">
+            <div class="overlay-text">Escribe aquí la función de la máquina 2.</div>
+        </div>
+        <div class="foto-wrapper">
+            <img src="img3.jpg" alt="Maquina 3" class="foto-lab">
+            <div class="overlay-text">Escribe aquí la función de la máquina 3.</div>
+        </div>
+    </div>
+
     <div class="section-title">2. Filosofía y Organización</div>
     <div class="grid">
         <div class="card">
@@ -76,11 +108,6 @@
             <div class="q-pair"><span class="question">Encargado directo del laboratorio:</span><span class="answer">En la mañana: Ing. Sergio Enrique Cedillo Rodriguez
             En la tarde: Ing. Ana Karen Melendez Olivares</span></div>
         </div>
-    </div>
-
-    <div class="foto-wrapper">
-        <img src="img3.jpg" alt="Equipamiento" class="foto-lab">
-        <div class="overlay-text">Área de trabajo equipada con tecnología CNC y sistemas de automatización avanzada.</div>
     </div>
 
     <div class="section-title" id="academico">3. Prácticas y Materias</div>
@@ -121,8 +148,8 @@
             <div class="q-pair"><span class="question">Correo:</span><span class="answer">Dr. Felipe Machorro: felipe.mf@saltillo.tecnm.mx
             Ing. Enrique Cedillo: sergio.cr@saltillo.tecnm.mx
             Ing. Ana Karen ana.mo@saltillo.tecnm.mx</span></div>
-            <div class="q-pair"><span class="question">Vinculación:</span><span class="answer">Recorridos guiados para padres y estudiantes visitantes.</span></div>
-            <div class="q-pair"><span class="question">Redes sociales:</span><span class="answer"><a href="https://www.facebook.com/people/CEIMT/61566814651377/">Visita la página oficial (CEIMT)</a></span></div>
+            <div class="q-pair"><span class="question">Eventos:</span><span class="answer">Recorridos guiados para padres y estudiantes visitantes.</span></div>
+            <div class="q-pair"><span class="question">Redes sociales:</span><span class="answer"><a href="https://www.facebook.com/people/CEIMT/61566814651377/" target="_blank" style="color:#c0392b">Visita la página oficial (CEIMT)</a></span></div>
         </div>
     </div>
 </div>
