@@ -16,7 +16,7 @@ line-height:1.6;
 }
 
 header{
-background-color:#352bc0;
+background-color:#4ecef5;
 color:white;
 padding:2rem;
 text-align:center;
@@ -44,6 +44,11 @@ margin:20px auto;
 padding:20px;
 }
 
+  /* Botón de Retícula */
+.pdf-link { display: block; width: fit-content; margin: 20px auto; background: #2c3e50; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.pdf-link:hover { background: #4ecef5; transform: scale(1.05); }
+
+
 .foto-lab{
 width:100%;
 height:350px;
@@ -54,8 +59,20 @@ border:3px solid #fff;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
+.certificados{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.certificados figure{
+margin:0;
+text-align:center;
+}
+
 .section-title{
-background:#412bc0;
+background:#4ecef5;
 color:white;
 padding:12px;
 border-radius:8px;
@@ -75,12 +92,12 @@ background:white;
 padding:20px;
 border-radius:12px;
 box-shadow:0 2px 8px rgba(0,0,0,0.05);
-border-top:4px solid #352bc0;
+border-top:4px solid #4ecef5;
 }
 
 .card h4{
 margin-top:0;
-color:#3c2bc0;
+color:#4ecef5;
 border-bottom:1px solid #eee;
 padding-bottom:5px;
 }
@@ -130,8 +147,11 @@ margin-top:50px;
 
 <div class="container">
 
+<a href="https://its-site-bucket.s3.us-west-2.amazonaws.com/RETICULA_ELECTRICA_Control_y_monitoreo_de_sistemas_electricos_de_potencia_100_903c780671.pdf" target="_blank" class="pdf-link">Control y Monitoreo de Sistemas Eléctricos de Potencia</a>
+
+
 <!-- IMAGEN DEL LABORATORIO -->
-<img src="imag_elec.png" class="foto-lab">
+<img src="WhatsApp Image 2026-03-11 at 12.33.35 PM.jpeg" class="foto-lab">
 
 <div class="section-title" id="identidad">1. Identidad, Historia y Ubicación</div>
 
@@ -190,14 +210,30 @@ margin-top:50px;
 
 </div>
 
-<img src="elec4.jpg" class="foto-certificado de laboratorio">
-<figcaption style="text-align: center; color: #333; font-size: 0.95rem; margin-top: 10px; font-style: italic;">Certificado del Laboratorio de Electrica - Instituto Tecnológico de Saltillo</figcaption>
+<div class="certificados">
 
-<img src="elec5.jpg" class="foto-certificado de laboratorio">
-<figcaption style="text-align: center; color: #333; font-size: 0.95rem; margin-top: 10px; font-style: italic;">Certificado del Laboratorio de Electrica - Instituto Tecnológico de Saltillo</figcaption>
+<figure>
+<img src="Imgrec1.jpeg" class="foto-lab">
+<figcaption style="color:#333;font-size:0.95rem;margin-top:10px;font-style:italic;">
+Certificado del Laboratorio de Eléctrica - Instituto Tecnológico de Saltillo
+</figcaption>
+</figure>
 
-<img src="elec6.jpg" class="foto-certificado de laboratorio">
-<figcaption style="text-align: center; color: #333; font-size: 0.95rem; margin-top: 10px; font-style: italic;">Certificado del Laboratorio de Electrica - Instituto Tecnológico de Saltillo</figcaption>
+<figure>
+<img src="Imgrec2.jpeg" class="foto-lab">
+<figcaption style="color:#333;font-size:0.95rem;margin-top:10px;font-style:italic;">
+Certificado del Laboratorio de Eléctrica - Instituto Tecnológico de Saltillo
+</figcaption>
+</figure>
+
+<figure>
+<img src="Imgrec3.jpeg" class="foto-lab">
+<figcaption style="color:#333;font-size:0.95rem;margin-top:10px;font-style:italic;">
+Certificado del Laboratorio de Eléctrica - Instituto Tecnológico de Saltillo
+</figcaption>
+</figure>
+
+</div>
 
 <div class="section-title" id="academico">2. Prácticas y Materias</div>
 
@@ -345,7 +381,7 @@ Agenda que se abre los viernes con el ing. Luis Navarro
 
 <div class="q-pair">
 <span class="question">Encargado del laboratorio:</span>
-<span class="answer">Ing.Luis Navarro</span>
+<span class="answer">ing.Luis Navarro</span>
 </div>
 
 <div class="q-pair">
@@ -370,6 +406,7 @@ Agenda que se abre los viernes con el ing. Luis Navarro
 
 </body>
 </html>
+
 
 
 
